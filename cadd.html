@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="Stylesheet/css" href="style.css"></a>
+      <title>Cadd infotech</title>
+      <link rel="Stylesheet" href="style1.css">
+     
+    </head>
+    <script>
+      let currentSlide = 0;
+  
+      function showSlide(n) {
+        const slides = document.querySelectorAll('.slideshow-container li');
+        currentSlide += n;
+  
+        if (currentSlide >= slides.length) {
+          currentSlide = 0;
+        } else if (currentSlide < 0) {
+          currentSlide = slides.length - 1;
+        }
+  
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+  
+        slides[currentSlide].style.display = 'block';
+      }
+  
+      document.addEventListener('DOMContentLoaded', function () {
+        showSlide(0);
+  
+        const prevButton = document.querySelector('.swipe input[value="<"]');
+        const nextButton = document.querySelector('.swipe input[value=">"]');
+  
+        prevButton.addEventListener('click', function () {
+          showSlide(-1);
+        });
+  
+        nextButton.addEventListener('click', function () {
+          showSlide(1);
+        });
+      });
+    </script>
+<body>      
+<header>
+<div class="header">
+    <a href="cadd.html" class="logo"><img src="c:\Users\Admin\Desktop\flask\python\logo.png" class="logo" style="height: 80px;width: 150px;"></a>
+    <a href ="cadd.html"><h4>Home</h4></a>    
+    <a href ="aboutus.html"><h4>About us</h4></a>    
+    <a href ="All Courses.html"><h4>All Courses</h4></a>    
+    <a href ="PLACEMENTS.html"><h4>Placements</h4></a>    
+    <a href ="Contactus.html"><h4>Contact Us</h4></a>    
+    <a href="https://www.google.com/maps/place/CADD+Infotech/@12.9575002,80.1404682,17z/data=!3m2!4b1!5s0x3a525e4cabb31d17:0x437d59429287f530!4m16!1m9!4m8!1m0!1m6!1m2!1s0x3a525fb0835e2c81:0x12b93e2389c37e1b!2sNo.2,+First+Floor,+Rangasamy+St,+near+Pothys,+Puduvai+Nagar+West,+Chromepet,+Tamil+Nadu+600044!2m2!1d80.1430431!2d12.957495!3m5!1s0x3a525fb0835e2c81:0x12b93e2389c37e1b!8m2!3d12.957495!4d80.1430431!16s%2Fg%2F11s2y27bvh?entry=ttu"><h4>Google</h4></a>    
+</div>
+            
+            
+<div class="slideshow-container">
+    <ul>
+    <li>
+    <img src="c:\Users\Admin\Downloads\cadd1.png ">                
+    </li>
+    <li>   
+    <img src="c:\Users\Admin\Downloads\cadd2.jpg ">                            
+    </li>
+    <li>
+    <img src="c:\Users\Admin\Desktop\flask\python\cadd3.jpg ">
+    </li>
+    </ul>
+<div class="swipe">
+        <input type="button" value="<">    
+        <input type="button" value=">">
+        <hr>
+</div>
+</div>
+
+
+<div class="log">
+    <img src="c:\Users\Admin\Desktop\flask\python\logo.png">
+</div>
+
+
+<div class="social">
+   <center> <h3>links</h3></center>
+    <ul>
+        <li><a href = "https://www.facebook.com/caddinfotech">
+        <img src = "c:\Users\Admin\Downloads\facebook.png" />
+        </a></li>
+        <li><a href = "https://www.instagram.com/caddinfotechchrompet/">
+        <img src = "c:\Users\Admin\Downloads\instagram.jpg" />             
+        </a></li>
+        <li><a href = "https://twitter.com/Caddinfotech">
+        <img src = "c:\Users\Admin\Downloads\twitter.png" />
+        </a></li>
+    </ul>
+</div>
+  
+<hr>
+<div class="picmar">
+    <a href="All Courses.html"><h2 style="color:white; background-color: blue;">COURSES OFFERED :</h2></a>
+    <hr>
+    <marquee behaviour="scroll" scrollamount = "10">            
+    <a href="mechanical.html"><img src="c:\Users\Admin\Downloads\mechanical.jpeg"></a>  
+    <a href="Civil.html"><img src="c:\Users\Admin\Downloads\civil.jpeg"></a>        
+    <a href="Electrical.html"><img src=" c:\Users\Admin\Downloads\electrical.jpg"></a>            
+    <a href="Computer.html"><img src="C:\Users\Admin\Downloads\computer.jpg"> </a>                
+    <a href="Architecture.html"><img src="C:\Users\Admin\Downloads\architechtural.jpeg"></a> 
+    <div class="course">
+    <h4>MECHANICAL</h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                  
+    <h4>CIVIL</h4> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                           
+    <h4>ELECTRICAL</h4> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;            
+    <h4>COMPUTER SCIENCE</h4>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;           
+    <h4>ARCHITECTURAL</h4>   
+    </marquee>
+</div>
+</div>
+<div class="large">
+    <hr>
+    <img src="c:\Users\Admin\Downloads\blurimage.jpg">
+    <hr>
+</div>
+
+
+<h2 style="color: white; background-color: blue;" > <i>Testimonials</i></h2>
+<hr>
+<table>
+        <tr>
+<div class="container">
+  <td><img src="c:\Users\Admin\Downloads\avatar1-removebg-preview.png" alt="Avatar" style="width:90px">    </td>
+ 
+  <td><p>Brindha Hari.</p></td>
+  <td><p>Good institute. Actually I had joined  this course, Especially meiyammai has taking class in  Excel , MS word very beautiful and clearly telling that details. Really awesome 😎.</p></td>
+</tr>
+</div>
+
+<tr>
+
+<div class="container">
+  <td><img src="c:\Users\Admin\Downloads\avatar2-removebg-preview.png" alt="Avatar" style="width:90px"></td>    
+  <td><p> Mohammed Gulam Ali.</p></td>
+  <td><p>I am one of the student of Caad, I came for MS Office…… Ms.Meiyammai madam has taken class which is really appreciatable and she has cleared all my doubts and learn more in depth in excel which is very useful for me and faculty member also coordinated friendly.</p></td>
+</tr>
+</div>
+
+<tr>
+    <div class="container">
+      <td><img src="c:\Users\Admin\Downloads\avatar3-removebg-preview.png" alt="Avatar" style="width:90px"></td>    
+      <td><p> nishi</p></td>
+      <td><p>It's a great experience... Staffs are great at teaching ... They also arrange for our flexible time in the case of online class... Everytime they check whether we understood the class before proceeding... Friendly learning process..</p></td>
+    </div>
+</tr>
+
+<tr>
+        <div class="container">
+          <td><img src="c:\Users\Admin\Downloads\avatar4-removebg-preview.png" alt="Avatar" style="width:90px"></td>    
+         <td> <p> Jawahar Jawahar.</p></td>
+          <td><p>100% recommended. To me, CADD INFOTECH is the best training centre in Chennai. Full of experienced and informative trainers. Great platform to learn your desired course..</p></td>
+        </div>
+    </tr>
+       
+<tr>    
+            <div class="container">
+             <td> <img src="c:\Users\Admin\Downloads\avatar5-removebg-preview.png" alt="Avatar" style="width:90px"></td>    
+              <td><p> Usha Vaithisankaran</p></td>
+              <td><p>Had a great experience learning here.  Instructors are knowledgeable and very helpful.  Timings are also flexible and convenient. I'm fully satisfied..</p></td>
+            </div>
+        </tr>
+        
+          
+        <tr>
+                <div class="container">
+                  <td><img src="c:\Users\Admin\Downloads\avatar6-removebg-preview.png" alt="Avatar" style="width:90px"></td>    
+                  <td><p> chitra perumal</p></td>
+                 <td> <p>staffs explaining about topics are very clearly and their teaching skills excellent. you can access them easily. they guide us about  carrier growth and development.</p></td>
+                </div>
+            </tr>
+            
+            </table>
+        
+
+
+<br>
+<center><h2 style="color: white ; background-color: blue;"><b><i><u>Registration form</u></i></b></h2>  </center>
+<form>  
+ <fieldset>  
+    <legend>User personal information</legend>  
+    <label>Enter your full name</label><br>  
+    <input type="text" name="Name"><br>  
+     <label>Enter your email</label><br>  
+     <input type="email" name="email"><br>  
+     <label>Enter your password</label><br>  
+     <input type="password" name="pass"><br>  
+     <label>confirm your password</label><br>  
+     <input type="password" name="pass"><br>
+     <br><label>Enter your gender</label><br>  
+     <input type="radio" id="gender" name="gender" value="male"/>Male  <br>  
+     <input type="radio" id="gender" name="gender" value="female"/>Female <br/>    
+     <input type="radio" id="gender" name="gender" value="others"/>others <br/>     
+     <br><label>Enter the course </label><br>  
+     <input type="radio" id="course" name="course" value="Mechanical "/>Mechanical <br>  
+     <input type="radio" id="course" name="course" value="Civil"/>Civil <br/>    
+     <input type="radio" id="course" name="course" value="Electrical"/>Electrical<br/>   
+     <input type="radio" id="course" name="course" value="Computer SCIENCE "/>Computer SCIENCE <br> 
+     <input type="radio" id="course" name="course" value="Architecture "/>Architecture <br> 
+      <br>Enter your Address:<br>  
+     <textarea></textarea><br>  
+     <input type="submit" value="sign-up">  
+ </fieldset>  
+</form> 
+<hr>
+<center><h2 style="color: white;background-color: blue;">©Cadd Infotech 2023. All Rights Reserved.</h2></center>
+
+</body>
+</html>

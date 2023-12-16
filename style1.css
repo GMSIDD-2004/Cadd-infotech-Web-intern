@@ -1,0 +1,116 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  overflow: hidden;
+  background-color: #002ffe;
+  height: auto;
+}
+.header a{
+  margin-left: 50px;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header a:hover {
+  background-color: whitesmoke;
+  color: black;
+  height: auto;
+  width: auto;
+}
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.header-right {
+  float: right;
+}
+.header a.logo {
+  height: 100px;
+  width: 180px;
+}
+@media screen and (max-width: 100px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+.slideshow-container img{
+  height: 1000px;
+  width: 1350px;
+  border-top-color: green;
+  border-radius: 40px;
+}
+.slideshow-container ul,li{
+  display: flex;
+  margin: 30px;
+}
+.swipe{
+ text-align: center;
+}
+.log img{
+  height: 300px;
+  width: 600px;
+  margin-left: 400px;
+}
+.social h3{
+
+  margin-right:433px ;
+}
+.social ul,li{
+  display: flex;
+
+}
+.social img{
+  height: 55px;
+  width: 60px;
+  font-display: center;
+}
+  
+.social{
+  margin-left:507px ;
+}
+.picmar a,h2{
+  text-align: center;
+}
+.picmar img{
+  height: 300px;
+  width: 350px;
+  margin-left: 20px; 
+  
+}
+.course h4{
+  
+  margin-left: 10px;
+  display: inline-block;
+}
+.large img{
+  height: 700px;
+  width: 1500px; 
+}
+form{
+  text-align: center;
+  
+}
+fieldset{
+  
+  width: 40px;
+  text-align:center;
+  display: inline;
+  border-color: slategrey;
+  border-radius: 40px;
+  border-width: 10px;
+
+}
